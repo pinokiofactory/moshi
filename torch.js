@@ -55,6 +55,7 @@ module.exports = {
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
           "pip install torch==2.2.0 torchvision torchaudio {{args && args.xformers ? 'xformers' : ''}}   --index-url https://download.pytorch.org/whl/cu121",
+        ]
       }
     },
     // linux rocm (amd)

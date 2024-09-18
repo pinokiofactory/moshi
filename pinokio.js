@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
   version: "2.0",
   title: "moshi",
-  description: "",
+  description: "[Mac only] a speech-text foundation model for real time dialogue https://github.com/kyutai-labs/moshi",
   icon: "icon.png",
   menu: async (kernel, info) => {
     let installed = info.exists("env")

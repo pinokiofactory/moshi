@@ -8,7 +8,7 @@ module.exports = {
         venv: "env",                // Edit this to customize the venv folder path
         env: { },                   // Edit this to customize environment variables (see documentation)
         message: [
-          "python app.py",    // Edit with your custom commands
+          "{{platform === 'darwin' ? 'python -m moshi_mlx.local_web' : 'python -m moshi.server'}}",
         ],
         on: [{
           // The regular expression pattern to monitor.

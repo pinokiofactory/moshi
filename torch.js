@@ -8,8 +8,7 @@ module.exports = {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
-          "pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 {{args && args.xformers ? 'xformers' : ''}}  --index-url https://download.pytorch.org/whl/cu121",
-          "pip install numpy==1.26.4"
+          "pip install torch==2.2.0 torchvision torchaudio {{args && args.xformers ? 'xformers' : ''}}  --index-url https://download.pytorch.org/whl/cu121",
         ]
       }
     },
@@ -31,8 +30,7 @@ module.exports = {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
-          "pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1",
-          "pip install numpy==1.26.4"
+          "pip install torch==2.2.0 torchvision torchaudio",
         ]
       }
     },
@@ -44,8 +42,7 @@ module.exports = {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
-          "pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1",
-          "pip install numpy==1.26.4"
+          "pip install torch==2.2.0 torchvision torchaudio",
         ]
       }
     },
@@ -57,8 +54,7 @@ module.exports = {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
-          "pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 {{args && args.xformers ? 'xformers' : ''}}   --index-url https://download.pytorch.org/whl/cu121",
-          "pip install numpy==1.26.4" 
+          "pip install torch==2.2.0 torchvision torchaudio {{args && args.xformers ? 'xformers' : ''}}   --index-url https://download.pytorch.org/whl/cu121",
       }
     },
     // linux rocm (amd)
@@ -69,8 +65,7 @@ module.exports = {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
-          "pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/rocm6.0",
-          "pip install numpy==1.26.4"
+          "pip install torch==2.2.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.0",
         ]
       }
     },
@@ -82,8 +77,7 @@ module.exports = {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
-          "pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cpu",
-          "pip install numpy==1.26.4"
+          "pip install torch==2.2.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu",
         ]
       }
     }
